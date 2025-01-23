@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: #000000;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 0 2rem;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #000000;
+            object-fit: cover;
+        }
+
+        .profile h3 {
+            font-size: 1.8rem;
+            color: #000000;
+        }
+
+        .profile p {
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#profile">Profile</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="profile" class="section">
+        <h2>My Profile</h2>
+        <div class="profile">
+            <img src="C:\Users\MOHAMED NASTHAEEN\Desktop\PortFolio\me3.jpg" alt="Profile Picture">
+            <h3>Mohamed Nasthaeen S</h3>
+            <p>Hi, I’m an enthusiast with a strong passion for both the electrical and programming domains.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer passionate about creating beautiful and functional websites. Welcome to my portfolio!. I’m a technology enthusiast passionate about both electrical engineering and programming. My journey revolves around designing and implementing efficient electrical systems, while leveraging programming to develop innovative solutions.
+
+            I have hands-on experience in areas like circuit design, embedded systems, and microcontroller programming, as well as expertise in coding languages such as Python, C++, and JavaScript. I enjoy exploring the intersection of hardware and software to create impactful projects, including IoT devices, automation systems, and robotics.
+            
+            When I’m not working, I’m diving into the latest tech trends, collaborating on exciting projects, or experimenting with new ideas in electronics and software. In my free time, I explore new technologies, work on personal projects, and dive deep into the world of IoT and robotics.Let’s create something amazing together!</p>
+    </section>
+
+  
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or follow me on social media:</p>
+        <p>Email: <a href="mailto:smdnasthu@gmail.com">smdnasthu@gmail.com</a></p>
+        <p>Social: <a href="https://github.com/SMD-Nasthaeen">Git-Hub</a> | <a href ="https://www.linkedin.com/in/mohamed-nasthaeen-s-offl">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.<!-- | <a href="#">Privacy Policy</a></p>-->
+    </footer>
+</body>
+</html>
